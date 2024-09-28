@@ -6,17 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8216A1302CA6E65E003B8654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8216A1272CA6E65E003B8654 /* Assets.xcassets */; };
+		8216A1312CA6E65E003B8654 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8216A12C2CA6E65E003B8654 /* Preview Assets.xcassets */; };
+		8216A1322CA6E65E003B8654 /* TriviaGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1282CA6E65E003B8654 /* TriviaGameApp.swift */; };
+		8216A1332CA6E65E003B8654 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A12A2CA6E65E003B8654 /* PrimaryButton.swift */; };
+		8216A1342CA6E65E003B8654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A12E2CA6E65E003B8654 /* ContentView.swift */; };
+		8216A1372CA6E89A003B8654 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1362CA6E89A003B8654 /* Extensions.swift */; };
+		8216A1392CA6E945003B8654 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1382CA6E945003B8654 /* QuestionView.swift */; };
+		8216A13B2CA6E9E5003B8654 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A13A2CA6E9E5003B8654 /* ProgressBar.swift */; };
+		8216A13E2CA6ED5F003B8654 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A13D2CA6ED5F003B8654 /* Answer.swift */; };
+		8216A1402CA6EDC2003B8654 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A13F2CA6EDC2003B8654 /* AnswerRow.swift */; };
+		8216A1422CA6F1BC003B8654 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1412CA6F1BC003B8654 /* TriviaView.swift */; };
+		8216A1442CA6F2DD003B8654 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1432CA6F2DD003B8654 /* Trivia.swift */; };
+		8216A1472CA6F8B5003B8654 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1462CA6F8B5003B8654 /* TriviaManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		8216A1272CA6E65E003B8654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8216A1282CA6E65E003B8654 /* TriviaGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaGameApp.swift; sourceTree = "<group>"; };
+		8216A12A2CA6E65E003B8654 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		8216A12C2CA6E65E003B8654 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8216A12E2CA6E65E003B8654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8216A1362CA6E89A003B8654 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8216A1382CA6E945003B8654 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		8216A13A2CA6E9E5003B8654 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		8216A13D2CA6ED5F003B8654 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8216A13F2CA6EDC2003B8654 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		8216A1412CA6F1BC003B8654 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		8216A1432CA6F2DD003B8654 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		8216A1462CA6F8B5003B8654 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
 		82FF349E2CA6DC0A003B1D71 /* TriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		82FF34A02CA6DC0A003B1D71 /* TriviaGame */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TriviaGame;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		82FF349B2CA6DC0A003B1D71 /* Frameworks */ = {
@@ -29,10 +50,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8216A1292CA6E65E003B8654 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8216A1272CA6E65E003B8654 /* Assets.xcassets */,
+				8216A1282CA6E65E003B8654 /* TriviaGameApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8216A12B2CA6E65E003B8654 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8216A12A2CA6E65E003B8654 /* PrimaryButton.swift */,
+				8216A13A2CA6E9E5003B8654 /* ProgressBar.swift */,
+				8216A13F2CA6EDC2003B8654 /* AnswerRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8216A12D2CA6E65E003B8654 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8216A12C2CA6E65E003B8654 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8216A12F2CA6E65E003B8654 /* TriviaGame */ = {
+			isa = PBXGroup;
+			children = (
+				8216A1452CA6F8AA003B8654 /* Manager */,
+				8216A13C2CA6ED27003B8654 /* Models */,
+				8216A1352CA6E670003B8654 /* Views */,
+				8216A12B2CA6E65E003B8654 /* Components */,
+				8216A1292CA6E65E003B8654 /* App */,
+				8216A12D2CA6E65E003B8654 /* Preview Content */,
+				8216A1362CA6E89A003B8654 /* Extensions.swift */,
+			);
+			path = TriviaGame;
+			sourceTree = "<group>";
+		};
+		8216A1352CA6E670003B8654 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8216A12E2CA6E65E003B8654 /* ContentView.swift */,
+				8216A1382CA6E945003B8654 /* QuestionView.swift */,
+				8216A1412CA6F1BC003B8654 /* TriviaView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8216A13C2CA6ED27003B8654 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8216A13D2CA6ED5F003B8654 /* Answer.swift */,
+				8216A1432CA6F2DD003B8654 /* Trivia.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8216A1452CA6F8AA003B8654 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8216A1462CA6F8B5003B8654 /* TriviaManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		82FF34952CA6DC0A003B1D71 = {
 			isa = PBXGroup;
 			children = (
-				82FF34A02CA6DC0A003B1D71 /* TriviaGame */,
+				8216A12F2CA6E65E003B8654 /* TriviaGame */,
 				82FF349F2CA6DC0A003B1D71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +148,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				82FF34A02CA6DC0A003B1D71 /* TriviaGame */,
 			);
 			name = TriviaGame;
 			packageProductDependencies = (
@@ -109,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8216A1302CA6E65E003B8654 /* Assets.xcassets in Resources */,
+				8216A1312CA6E65E003B8654 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8216A1392CA6E945003B8654 /* QuestionView.swift in Sources */,
+				8216A1422CA6F1BC003B8654 /* TriviaView.swift in Sources */,
+				8216A1442CA6F2DD003B8654 /* Trivia.swift in Sources */,
+				8216A1322CA6E65E003B8654 /* TriviaGameApp.swift in Sources */,
+				8216A1472CA6F8B5003B8654 /* TriviaManager.swift in Sources */,
+				8216A1402CA6EDC2003B8654 /* AnswerRow.swift in Sources */,
+				8216A1332CA6E65E003B8654 /* PrimaryButton.swift in Sources */,
+				8216A13E2CA6ED5F003B8654 /* Answer.swift in Sources */,
+				8216A1342CA6E65E003B8654 /* ContentView.swift in Sources */,
+				8216A13B2CA6E9E5003B8654 /* ProgressBar.swift in Sources */,
+				8216A1372CA6E89A003B8654 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
