@@ -19,7 +19,7 @@ struct Trivia:Codable{
         var difficulty:String
         var question:String
         var correctAnswer:String
-        var incorrectAnswer:[String]
+        var incorrectAnswers:[String]
         
         var formattedQuestion:AttributedString{
             do{
@@ -32,7 +32,7 @@ struct Trivia:Codable{
         var answers:[Answer]{
             do{
                 let correct = [Answer(text:  try AttributedString(markdown: correctAnswer), isCorrect: true)]
-                let incorrects = try incorrectAnswer.map { answer in
+                let incorrects = try incorrectAnswers.map { answer in
                     Answer(text: try AttributedString(markdown: answer), isCorrect: false)
                 }
                 let allAnswers = correct + incorrects

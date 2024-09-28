@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var manager = TriviaManager()
     var body: some View {
         NavigationView {
             VStack(spacing:40){
@@ -18,7 +19,8 @@ struct ContentView: View {
                 }
                 .foregroundColor(.accent)
                 NavigationLink {
-                    TriviaView()
+                    HomeView()
+                        .environmentObject(manager)
                 } label: {
                     PrimaryButton(text: "Let's go!")
                 }
@@ -32,4 +34,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(TriviaManager())
 }

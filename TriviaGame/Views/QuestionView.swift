@@ -8,41 +8,52 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @EnvironmentObject var manager:TriviaManager
     var body: some View {
         VStack(spacing:40){
             HStack{
                 Text("Trivate Game")
                     .lilacTitle()
                 Spacer()
-                Text("1 out of 10")
+                Text("\(manager.index + 1) out of \(manager.length)")
                     .fontWeight(.heavy)
                     .foregroundColor(.accent)
             }
             
-            ProgressBar(progress: 35)
+            ProgressBar(progress: manager.progress)
             
             VStack(alignment: .leading,spacing: 20) {
-                Text("Jjd")
+                Text(manager.question)
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(.gray)
                 
-                AnswerRow(answer: Answer(text: "False", isCorrect: true))
-                AnswerRow(answer: Answer(text: "True", isCorrect: false))
+                ForEach(manager.answerChoise,id: \.id){ answer in
+                    AnswerRow(answer: answer)
+                        .environmentObject(manager)
+                }
             }
             
-            PrimaryButton(text: "Next")
+            
+            Button {
+                manager.goToNextQuestion()
+            } label: {
+                PrimaryButton(text: "Next",background: manager.answerSelected ? .accent : .gray.opacity(0.35))
+            }
+            .disabled(!manager.answerSelected)
+           
             
             Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity,maxHeight: .infinity)
         .background(.bg)
-        .navigationBarHidden(true)
+//        .navigationBarHidden(true)
         
     }
 }
 
 #Preview {
     QuestionView()
+        .environmentObject(TriviaManager())
 }

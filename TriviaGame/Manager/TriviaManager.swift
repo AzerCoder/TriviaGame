@@ -16,6 +16,8 @@ class TriviaManager:ObservableObject{
     @Published private(set) var question:AttributedString = ""
     @Published private(set) var answerChoise: [Answer] = []
     @Published private(set) var progress:CGFloat = 0.00
+    @Published private(set) var score = 0
+    @Published var category:Int = 0
     
     init(){
         Task.init {
@@ -24,7 +26,7 @@ class TriviaManager:ObservableObject{
     }
     
     func fetchTrivia() async {
-        guard let url = URL(string: "https://opendb.com/api.php?amount=10") else { fatalError("Missing URL")}
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=15&category=\(category)") else { fatalError("Missing URL")}
         
         let urlRequest = URLRequest(url: url)
         
@@ -38,13 +40,18 @@ class TriviaManager:ObservableObject{
             let decodedData = try decoder.decode(Trivia.self, from: data)
             
             DispatchQueue.main.sync {
+                self.index = 0
+                self.score = 0
+                self.progress = 0.00
+                self.reachedEnd = false
+                
                 self.trivia = decodedData.results
                 self.length = self.trivia.count
                 setQuestion()
             }
             
         }catch{
-            print("Error fetching trivia \(error.localizedDescription)")
+            print("Error fetching trivia \(error)")
         }
     }
     
@@ -71,7 +78,7 @@ class TriviaManager:ObservableObject{
     func selectedAnswer(answer:Answer){
         answerSelected = true
         if answer.isCorrect{
-            
+            score += 1
         }
     }
 }

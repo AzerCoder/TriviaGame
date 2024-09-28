@@ -20,6 +20,7 @@
 		8216A1422CA6F1BC003B8654 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1412CA6F1BC003B8654 /* TriviaView.swift */; };
 		8216A1442CA6F2DD003B8654 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1432CA6F2DD003B8654 /* Trivia.swift */; };
 		8216A1472CA6F8B5003B8654 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216A1462CA6F8B5003B8654 /* TriviaManager.swift */; };
+		825C138C2CA81D3600A17A01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C138B2CA81D3600A17A01 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8216A1412CA6F1BC003B8654 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
 		8216A1432CA6F2DD003B8654 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 		8216A1462CA6F8B5003B8654 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
+		825C138B2CA81D3600A17A01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		82FF349E2CA6DC0A003B1D71 /* TriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				8216A12E2CA6E65E003B8654 /* ContentView.swift */,
 				8216A1382CA6E945003B8654 /* QuestionView.swift */,
 				8216A1412CA6F1BC003B8654 /* TriviaView.swift */,
+				825C138B2CA81D3600A17A01 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				8216A1332CA6E65E003B8654 /* PrimaryButton.swift in Sources */,
 				8216A13E2CA6ED5F003B8654 /* Answer.swift in Sources */,
 				8216A1342CA6E65E003B8654 /* ContentView.swift in Sources */,
+				825C138C2CA81D3600A17A01 /* HomeView.swift in Sources */,
 				8216A13B2CA6E9E5003B8654 /* ProgressBar.swift in Sources */,
 				8216A1372CA6E89A003B8654 /* Extensions.swift in Sources */,
 			);
